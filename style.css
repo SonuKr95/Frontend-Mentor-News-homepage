@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Sans-Serif"),
+    url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+:root {
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Inter";
+  width: 100%;
+  min-height: 100vh;
+  font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+  display: none;
+}
+
+.main-cont {
+  max-width: 400px;
+  margin: 1em auto;
+  padding: 10px 20px;
+  border: 1px solid green;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  padding-left: 2px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.heading > h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.heading > p {
+  margin: 1em 0;
+  /* margin-bottom: 1em; */
+  line-height: 1.5;
+  color: #333;
+}
+
+button {
+  background-color: var(--Soft-red);
+  color: var(--Off-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  padding: 1em 2em;
+  margin-bottom: 4em;
+  letter-spacing: 3px;
+}
+
+.artices {
+  background-color: var(--Very-dark-blue);
+  color: var(--Off-white);
+  padding: 1em;
+  margin-bottom: 3em;
+}
+
+.art h2 {
+  font-weight: 700;
+  color: var(--Soft-orange);
+  margin-bottom: 1em;
+}
+
+.art {
+  padding: 0.75em 0.75em;
+  margin-bottom: 1em;
+}
+.art > h3 {
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* #nav-menu-icon img {
+  display: none;
+} */
+
+.post {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.topic {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.topic img {
+  max-width: 30%;
+  margin-right: 1em;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+}
+
+/* .text > p {
+  justify-self: flex-end;
+} */
+
+.line {
+  height: 1px;
+  background-color: var(--Grayish-blue);
+}
+
+.text > span {
+  color: rgb(192, 185, 185);
+  margin-bottom: 0.75em;
+  /* font-weight: 900; */
+}
+.text > h2 {
+  /* color: rgb(192, 185, 185); */
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+.text > p {
+  color: rgb(100, 98, 98);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 1em;
+}
